@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.sears.jms</groupId>
+  <artifactId>SearsOpenJMS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>SearsOpenJMS</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   	<OpenJms.lib.path>${project.basedir}/lib/</OpenJms.lib.path>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+  <groupId>commons-logging</groupId>
+  <artifactId>commons-logging</artifactId>
+  <version>1.1.1</version>
+</dependency>
+   	
+		<dependency>
+			<groupId>jms</groupId>
+			<artifactId>jms-1.1</artifactId>
+			<version>0.7.7-beta-1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}jms-1.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jms</groupId>
+			<artifactId>openjms-0.7.7-beta-1</artifactId>
+			<version>0.7.7-beta-1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}openjms-0.7.7-beta-1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jms</groupId>
+			<artifactId>openjms-common-0.7.7-beta-1</artifactId>
+			<version>0.7.7-beta-1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}openjms-common-0.7.7-beta-1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jms</groupId>
+			<artifactId>openjms-net-0.7.7-beta-1</artifactId>
+			<version>0.7.7-beta-1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}openjms-net-0.7.7-beta-1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jms</groupId>
+			<artifactId>openjms-tools-0.7.7-beta-1</artifactId>
+			<version>0.7.7-beta-1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}openjms-tools-0.7.7-beta-1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jndi</groupId>
+			<artifactId>jndi-1.2.1</artifactId>
+			<version>1.2.1</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}jndi-1.2.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jndikit</groupId>
+			<artifactId>spice-jndikit-1.2</artifactId>
+			<version>1.2</version>
+			<scope>system</scope>
+			<systemPath>${OpenJms.lib.path}spice-jndikit-1.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>concurrent</groupId>
+			<artifactId>concurrent</artifactId>
+			<version>1.3.4</version>
+		</dependency>	
+    
+  </dependencies>
+</project>
